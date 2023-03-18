@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Header from './Header';
-const Home = (props) => {
+const Home = () => {
     return (
         <div>
-            <div className="home-page-header">
-                <Header current={props} />
-            </div>
+            <Header/>
+
             <h1>this is home page</h1>
 
         </div>

@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import React, { Component} from 'react';
+import React from 'react';
 import { useLocation, NavLink } from "react-router-dom";
 import './Header.css';
 
@@ -7,10 +7,10 @@ const Header = () => {
     const location = useLocation();
     return (
         <div>
-            {(location.pathname === "/home")&&
+            {(location.pathname === "/")&&
             <div className='home-header'>
                 <div className="home-logo-header">
-                    <Link style={{ display: 'flex', justifyContent: 'center', flexGrow: '1' }} to="/home">
+                    <Link style={{ display: 'flex', justifyContent: 'center', flexGrow: '1' }} to="/">
                         <img className="logo-home" alt="logo" src="https://images.barrons.com/im-424346?width=639&height=426"/>
                     </Link>
                     <div>
@@ -27,13 +27,13 @@ const Header = () => {
             </div>
             }
             <div className="header">
-                {(location.pathname !== "/home" ) &&
+                {(location.pathname !== "/" ) &&
                     <div className={"header-container"}>
                         <div className='main-container'>
                             <div>
                                 <div className="tab-nav-header-translation"> <button class="Button">English</button> </div>
                             </div>
-                            <NavLink to="/home">
+                            <NavLink to="/">
                                 <img className="logo-link" alt="logo" src="https://images.barrons.com/im-424346?width=639&height=426" />
                             </NavLink>
                         </div>
