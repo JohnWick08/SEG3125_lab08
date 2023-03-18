@@ -1,6 +1,14 @@
-const Home = () => {
+import React, { useState, useEffect } from 'react'
+import Header from './Header';
+const Home = (props) => {
     return (
-        <h1>this is home page</h1>
+        <div>
+            <div className="home-page-header">
+                <Header current={props} />
+            </div>
+            <h1>this is home page</h1>
+
+        </div>
     );
 }
 

@@ -7,12 +7,12 @@ const StepOne = (props) => {
     return (
         <div>
             <div className="page-header">
-                <Header/>
+                <Header />
             </div>
             <div className="wrapper">
                 <div className='sub-header'>
                     <div className="subheader-content">
-                        <h1>Questionare</h1>
+                        <h1>Result Analysis</h1>
 
                     </div>
                 </div>
