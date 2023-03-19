@@ -57,28 +57,7 @@ const StepOne = (props) => {
                 
 
             <form  onSubmit={handleSubmit}>
-                    <fieldset data-require-one>
-                    <legend> {lang === "English" ?
-                        "1. In the pass 7 days, how much depression on average did you have?" :
-                        "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}</legend>
-                    <question>
-                        <input type="radio" id="contactChoice1" name="q1" value="1" onChange={handleChange}/>
-                        <label htmlFor="contactChoice1">No depressed</label>
 
-                        <input type="radio" id="contactChoice2" name="q1" value="2" onChange={handleChange}/>
-                        <label htmlFor="contactChoice2">Little depressed</label>
-
-                        <input type="radio" id="contactChoice3" name="q1" value="3" onChange={handleChange}/>
-                        <label htmlFor="contactChoice3">Moderate depressed</label>
-
-                        <input type="radio" id="contactChoice4" name="q1" value="4" onChange={handleChange}/>
-                        <label htmlFor="contactChoice4">Very depressed</label>
-
-                        <input type="radio" id="contactChoice5" name="q1" value="5" onChange={handleChange}/>
-                        <label htmlFor="contactChoice5">Extremely depressed</label>
-                    </question>
-                </fieldset>
-                <br></br><br></br>
                 <fieldset data-require-one>
                     <div className="box-container-numbered">
                         <p className="numbered-subheading"> {lang === "English" ?
@@ -178,11 +157,11 @@ const StepOne = (props) => {
                     </fieldset>
                 </div>
 
-                    <div className="box-container-numbered">
+                <div className="box-container-numbered">
                 
-                <br></br><br></br>
+                <div className="box-container-numbered">
                 <fieldset data-require-one>
-                    <legend>{lang === "English" ?
+                        <p className="numbered-subheading">{lang === "English" ?
                         "5. Do you feeling bad about your self?" :
                         "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}</p>
                     <question>
@@ -203,7 +182,8 @@ const StepOne = (props) => {
                     </question>
                 </fieldset>
                 </div>
-                <br></br>
+                </div>
+
                 <div>
                     <button class="button-3" type="submit" name="Calculate" id="calculate" value="Calculate">Submit</button>
                 </div>
