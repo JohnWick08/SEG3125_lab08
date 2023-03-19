@@ -9,13 +9,13 @@ const Home = () => {
     return (
         <div>
             <Header/>
-            <div class="orangenext-btn-container">
-              <div class="orangenext-btn-content"><a class="button" href="/notice">Next</a></div>
-            </div>
 
             <div class="body-container">
               <div class="main-options">
-                <h1 class="maintitle">Why use the JIA Option Map?</h1>
+                <div class="orangenext-btn-container">
+                  <h1 class="maintitle">Why use the JIA Option Map?</h1>
+                  <div class="orangenext-btn-content"><a class="button" href="/StepOne">Next</a></div>
+                </div>
                 <div class="row">
                   <div class="box">
                     <div class="card">
@@ -61,7 +61,7 @@ const Home = () => {
              </div>
             </div>
             <div class="next-btn-container">
-              <div class="next-btn-content"><a class="button" href="/notice">Next</a></div>
+              <div class="next-btn-content"><a class="button" href="/StepOne">Next</a></div>
               <br />
               <a>This page is designed by Gary, Vicky and Kaixi</a>
             </div>
