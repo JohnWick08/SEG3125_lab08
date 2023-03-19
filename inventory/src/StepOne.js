@@ -24,6 +24,7 @@ const StepOne = (props) => {
         event.preventDefault();
         const sum = values.q1 + values.q2 + values.q3 + values.q4 + values.q5;
         setTotal(sum);
+        localStorage.setItem('myScore',sum);
     };
     console.log(total)
 
@@ -60,10 +61,12 @@ const StepOne = (props) => {
 
                 <fieldset data-require-one>
                     <div className="box-container-numbered">
+                        <div>
                         <p className="numbered-subheading"> {lang === "English" ?
                                 "1. In the pass 7 days, how much depression on average did you have?" :
                                 "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}
                         </p>
+                        </div>
                         <div class="MuiFormGroup-root MuiFormGroup-row">
                             <input type="radio" id="contactChoice1" name="q1" value="1" onChange={handleChange} />
                             <label htmlFor="contactChoice1">No depressed</label>
@@ -184,8 +187,8 @@ const StepOne = (props) => {
                 </div>
                 </div>
 
-                <div>
-                    <button class="button-3" type="submit" name="Calculate" id="calculate" value="Calculate">Submit</button>
+                <div class="next-btn-container">
+                    <button class="next-btn btn btn-secondary" type="button submit" name="Calculate" id="calculate" value="Calculate">Submit</button>
                 </div>
             </form>
             </div>

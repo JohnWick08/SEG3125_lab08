@@ -16,7 +16,7 @@ const StepTwo = (props) => {
                     </div>
                 </div>
             </div>
-
+            <p>{localStorage.getItem('myScore')}</p>
         </div>
     );
 }
