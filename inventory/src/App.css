@@ -1447,3 +1447,40 @@ p.collapsed-icon {
     margin-left: 1.5rem;
   }
 }
+
+.body-container {
+  max-width: 1140px;
+  margin: 0rem auto;
+}
+
+.body-container>h1:first-of-type {
+  text-align: center;
+}
+
+.orangenext-btn-container-intro {
+  color: var(--secondary-colour) !important;
+  text-align: center;
+  margin: 12rem 0rem 0rem 0rem;
+  padding: 1rem 1.5rem;
+}
+
+.orangenext-btn-content-intro {
+  max-width: 1100px;
+  margin: 0 auto;
+  color: var(--primary-colour) !important;
+}
+
+@media (min-width: 760px) {
+  .orangenext-btn-container {
+    text-align: right;
+    margin-top: -9rem;
+  }
+
+  .body-container {
+    margin-top: -1.5rem;
+  }
+
+  .orangenext-btn-container-intro {
+    margin: 8rem 0rem 0rem 0rem;
+  }
+}

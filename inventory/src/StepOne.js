@@ -26,33 +26,40 @@ const StepOne = (props) => {
                     </div>
                 </div>
             </div>
-            <form>
-                    <fieldset data-require-one>
-                    <legend> {lang === "English" ?
-                        "1. In the pass 7 days, how much depression on average did you have?" :
-                        "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}</legend>
-                    <question>
-                        <input type="radio" id="contactChoice1" name="q1" value="1"/>
-                        <label htmlFor="contactChoice1">No depressed</label>
-
-                        <input type="radio" id="contactChoice2" name="q1" value="2"/>
-                        <label htmlFor="contactChoice2">Little depressed</label>
-
-                        <input type="radio" id="contactChoice3" name="q1" value="3"/>
-                        <label htmlFor="contactChoice3">Moderate depressed</label>
-
-                        <input type="radio" id="contactChoice4" name="q1" value="4"/>
-                        <label htmlFor="contactChoice4">Very depressed</label>
-
-                        <input type="radio" id="contactChoice5" name="q1" value="5"/>
-                        <label htmlFor="contactChoice5">Extremely depressed</label>
-                    </question>
-                </fieldset>
-                <br></br><br></br>
+            <div className="body-container">
+            <form >
+                
                 <fieldset data-require-one>
-                    <legend>{lang === "English" ?
+                    <div className="box-container-numbered">
+                        <p className="numbered-subheading"> {lang === "English" ?
+                                "1. In the pass 7 days, how much depression on average did you have?" :
+                                "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}
+                        </p>
+                        <div class="MuiFormGroup-root MuiFormGroup-row">
+                            <input type="radio" id="contactChoice1" name="q1" value="1"/>
+                            <label htmlFor="contactChoice1">No depressed</label>
+
+                            <input type="radio" id="contactChoice2" name="q1" value="2"/>
+                            <label htmlFor="contactChoice2">Little depressed</label>
+
+                            <input type="radio" id="contactChoice3" name="q1" value="3"/>
+                            <label htmlFor="contactChoice3">Moderate depressed</label>
+
+                            <input type="radio" id="contactChoice4" name="q1" value="4"/>
+                            <label htmlFor="contactChoice4">Very depressed</label>
+
+                            <input type="radio" id="contactChoice5" name="q1" value="5"/>
+                            <label htmlFor="contactChoice5">Extremely depressed</label>
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <fieldset data-require-one>
+                    <div className="box-container-numbered">
+                    <p className="numbered-subheading">{lang === "English" ?
                         "2. How often do you feel depressed in pass 7 days?" :
-                        "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}</legend>
+                        "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}
+                    </p>
                     <question>
                         <input type="radio" id="contactChoice6" name="q2" value="1"/>
                         <label htmlFor="contactChoice6">Never</label>
@@ -69,12 +76,14 @@ const StepOne = (props) => {
                         <input type="radio" id="contactChoice10" name="q2" value="5"/>
                         <label htmlFor="contactChoice10">Almost every day</label>
                     </question>
+                    </div>
                 </fieldset>
-                <br></br><br></br>
+
+                    <div className="box-container-numbered">
                 <fieldset data-require-one>
-                    <legend>  {lang === "English" ?
+                            <p className="numbered-subheading">  {lang === "English" ?
                         "3. Do you have trouble falling or staying asleep in pass 7 day?" :
-                        "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}</legend>
+                        "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}</p>
                     <question>
                         <input type="radio" id="contactChoice11" name="q3" value="1"/>
                         <label htmlFor="contactChoice1">Never</label>
@@ -92,33 +101,38 @@ const StepOne = (props) => {
                         <label htmlFor="contactChoice5">Almost every day</label>
                     </question>
                 </fieldset>
-                <br></br><br></br>
+                </div>
+
+                    <div className="box-container-numbered">
+                    <fieldset data-require-one>
+                            <p className="numbered-subheading">{lang === "English" ?
+                            "4. How much interest or pleasure in doing things" :
+                            "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}
+                        </p>
+                        <question>
+                            <input type="radio" id="contactChoice16" name="q4" value="1"/>
+                            <label htmlFor="contactChoice1">Never</label>
+
+                            <input type="radio" id="contactChoice17" name="q4" value="2"/>
+                            <label htmlFor="contactChoice2">Rarely</label>
+
+                            <input type="radio" id="contactChoice18" name="q4" value="3"/>
+                            <label htmlFor="contactChoice3">Sometimes</label>
+
+                            <input type="radio" id="contactChoice19" name="q4" value="4"/>
+                            <label htmlFor="contactChoice4">More than half of the days</label>
+
+                            <input type="radio" id="contactChoice20" name="q4" value="5"/>
+                            <label htmlFor="contactChoice5">Almost every day</label>
+                        </question>
+                    </fieldset>
+                </div>
+
+                    <div className="box-container-numbered">
                 <fieldset data-require-one>
-                    <legend>{lang === "English" ?
-                        "4. How much interest or pleasure in doing things" :
-                        "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}</legend>
-                    <question>
-                        <input type="radio" id="contactChoice16" name="q4" value="1"/>
-                        <label htmlFor="contactChoice1">Never</label>
-
-                        <input type="radio" id="contactChoice17" name="q4" value="2"/>
-                        <label htmlFor="contactChoice2">Rarely</label>
-
-                        <input type="radio" id="contactChoice18" name="q4" value="3"/>
-                        <label htmlFor="contactChoice3">Sometimes</label>
-
-                        <input type="radio" id="contactChoice19" name="q4" value="4"/>
-                        <label htmlFor="contactChoice4">More than half of the days</label>
-
-                        <input type="radio" id="contactChoice20" name="q4" value="5"/>
-                        <label htmlFor="contactChoice5">Almost every day</label>
-                    </question>
-                </fieldset>
-                <br></br><br></br>
-                <fieldset data-require-one>
-                    <legend>{lang === "English" ?
+                    <p className="numbered-subheading">{lang === "English" ?
                         "5. Do you feeling bad about your self?" :
-                        "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}</legend>
+                        "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}</p>
                     <question>
                         <input type="radio" id="contactChoice21" name="q5" value="1"/>
                         <label htmlFor="contactChoice1">Never</label>
@@ -136,11 +150,13 @@ const StepOne = (props) => {
                         <label htmlFor="contactChoice5">Almost every day</label>
                     </question>
                 </fieldset>
+                </div>
                 <br></br>
                 <div>
                     <button class="button-3" type="submit">Submit</button>
                 </div>
             </form>
+            </div>
 
         </div>
     );
