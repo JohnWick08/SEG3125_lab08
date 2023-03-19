@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Header from './Header';
 import './App.css';
-const StepOne = (props) => {
+const StepTwo = (props) => {
 
 
     return (
@@ -21,4 +21,4 @@ const StepOne = (props) => {
     );
 }
 
-export default StepOne;
+export default StepTwo;
