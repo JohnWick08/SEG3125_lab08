@@ -40,7 +40,6 @@ const StepOne = (props) => {
         fieldset.form.addEventListener("change", updateValidity);
         updateValidity();
     }
-
     return (
         <div className="StepOne">
             <Header/>
@@ -65,19 +64,19 @@ const StepOne = (props) => {
                                 "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}
                         </p>
                         <div class="MuiFormGroup-root MuiFormGroup-row">
-                            <input type="radio" id="contactChoice1" name="q1" value="1" onChange={handleChange} />
+                            <input type="radio" id="contactChoice1" name="q1" value="1" onChange={handleChange}/>
                             <label htmlFor="contactChoice1">No depressed</label>
 
-                            <input type="radio" id="contactChoice2" name="q1" value="2" onChange={handleChange} />
+                            <input type="radio" id="contactChoice2" name="q1" value="2" onChange={handleChange}/>
                             <label htmlFor="contactChoice2">Little depressed</label>
 
-                            <input type="radio" id="contactChoice3" name="q1" value="3" onChange={handleChange} />
+                            <input type="radio" id="contactChoice3" name="q1" value="3" onChange={handleChange}/>
                             <label htmlFor="contactChoice3">Moderate depressed</label>
 
-                            <input type="radio" id="contactChoice4" name="q1" value="4" onChange={handleChange} />
+                            <input type="radio" id="contactChoice4" name="q1" value="4" onChange={handleChange}/>
                             <label htmlFor="contactChoice4">Very depressed</label>
 
-                            <input type="radio" id="contactChoice5" name="q1" value="5" onChange={handleChange} />
+                            <input type="radio" id="contactChoice5" name="q1" value="5" onChange={handleChange}/>
                             <label htmlFor="contactChoice5">Extremely depressed</label>
                         </div>
                     </div>
@@ -99,7 +98,7 @@ const StepOne = (props) => {
                         <input type="radio" id="contactChoice8" name="q2" value="3" onChange={handleChange}/>
                         <label htmlFor="contactChoice8">Sometimes</label>
 
-                        <input type="radio" id="contactChoice9" name="q2" value="4" onChange={handleChange}/>
+                        <input type="radio" id="contactChoice9" name="field2" value="4" onChange={handleChange}/>
                         <label htmlFor="contactChoice9">More than half of the days</label>
 
                         <input type="radio" id="contactChoice10" name="q2" value="5" onChange={handleChange}/>
@@ -139,19 +138,19 @@ const StepOne = (props) => {
                             "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}
                         </p>
                         <question>
-                            <input type="radio" id="contactChoice16" name="q4" value="1" onChange={handleChange} />
+                            <input type="radio" id="contactChoice16" name="q4" value="1" onChange={handleChange}/>
                             <label htmlFor="contactChoice16">Never</label>
 
-                            <input type="radio" id="contactChoice17" name="q4" value="2" onChange={handleChange} />
+                            <input type="radio" id="contactChoice17" name="q4" value="2" onChange={handleChange}/>
                             <label htmlFor="contactChoice17">Rarely</label>
 
-                            <input type="radio" id="contactChoice18" name="q4" value="3" onChange={handleChange} />
+                            <input type="radio" id="contactChoice18" name="q4" value="3" onChange={handleChange}/>
                             <label htmlFor="contactChoice18">Sometimes</label>
 
-                            <input type="radio" id="contactChoice19" name="q4" value="4" onChange={handleChange} />
+                            <input type="radio" id="contactChoice19" name="q4" value="4" onChange={handleChange}/>
                             <label htmlFor="contactChoice19">More than half of the days</label>
 
-                            <input type="radio" id="contactChoice20" name="q4" value="5" onChange={handleChange} />
+                            <input type="radio" id="contactChoice20" name="q4" value="5" onChange={handleChange}/>
                             <label htmlFor="contactChoice20">Almost every day</label>
                         </question>
                     </fieldset>
