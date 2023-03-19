@@ -6,7 +6,7 @@ const StepTwo = (props) => {
 
     return (
         <div>
-                <Header />
+            <Header />
 
             <div className="wrapper">
                 <div className='sub-header'>
