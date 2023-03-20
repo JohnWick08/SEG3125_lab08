@@ -26,8 +26,6 @@ const StepOne = (props) => {
         setTotal(sum);
         localStorage.setItem('myScore',sum);
     };
-    console.log(total)
-
 
     let lang = localStorage.getItem("language");
     for (const fieldset of document.querySelectorAll("fieldset[data-require-one]")) {
