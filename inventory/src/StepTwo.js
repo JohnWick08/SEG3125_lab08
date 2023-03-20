@@ -22,6 +22,10 @@ const StepTwo = (props) => {
                 <div className='intropic' float='left'>
                     <p>According to Your input,your level of depression is: <b>5 Extreme Depress</b></p>
                 </div>
+                <div className='recomm' float='left'>
+                    <p><b>Recommendation:</b><br></br>
+                       Drink hot water!</p>
+                </div>
             </div>
             <p>{localStorage.getItem('myScore')}</p>
         </div>
