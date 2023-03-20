@@ -58,7 +58,7 @@ const StepOne = (props) => {
 
             <div className="body-container">
 
-                
+
 
             <form  onSubmit={handleSubmit}>
 
@@ -88,7 +88,7 @@ const StepOne = (props) => {
                         </div>
                     </div>
                 </fieldset>
-                
+
                 <fieldset data-require-one>
                     <div className="box-container-numbered">
                     <p className="numbered-subheading">{lang === "English" ?
@@ -164,7 +164,7 @@ const StepOne = (props) => {
                 </div>
 
                 <div className="box-container-numbered">
-                
+
                 <div className="box-container-numbered">
                 <fieldset data-require-one>
                         <p className="numbered-subheading">{lang === "English" ?
@@ -190,8 +190,12 @@ const StepOne = (props) => {
                 </div>
                 </div>
 
-                <div class="next-btn-container">
-                    <button class="next-btn btn btn-secondary" type="button submit" name="Calculate" id="calculate" value="Calculate"><a class="button" href="/StepTwo">Submit</a></button>
+
+                <div className="next-btn-container">
+                    <button className="next-btn btn btn-secondary" type="button submit" name="Calculate" id="calculate"
+                            value="Calculate">Submit
+                    </button>
+
                 </div>
             </form>
             </div>
