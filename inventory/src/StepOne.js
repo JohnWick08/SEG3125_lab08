@@ -187,7 +187,7 @@ const StepOne = (props) => {
                 </div>
 
                 <div class="next-btn-container">
-                    <button class="next-btn btn btn-secondary" type="button submit" name="Calculate" id="calculate" value="Calculate">Submit</button>
+                    <button class="next-btn btn btn-secondary" type="button submit" name="Calculate" id="calculate" value="Calculate"><a class="button" href="/StepTwo">Submit</a></button>
                 </div>
             </form>
             </div>
