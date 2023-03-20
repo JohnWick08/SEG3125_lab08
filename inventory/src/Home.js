@@ -13,7 +13,7 @@ const Home = () => {
             <div class="body-container">
               <div class="main-options">
                 <div class="orangenext-btn-container">
-                  <h1 class="maintitle">Why use the JIA Option Map?</h1>
+                  <h1 class="maintitle">Why use the Happiness Checker?</h1>
                   <div class="orangenext-btn-content"><a class="button" href="/StepOne">Next</a></div>
                 </div>
                 <div class="row">
@@ -23,11 +23,9 @@ const Home = () => {
                         <img width="100%" src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" alt="main image one" class="cardImg card-img-top" />
                       </div>
                       <div class="card-body">
-                        <h5 class="card-title-intro card-title">You have juvenile idiopathic arthritis (JIA)</h5>
+                        <h5 class="card-title-intro card-title">You have Depression</h5>
                         <div class="underline"></div>
-                        <p class="card-text">Juvenile idiopathic arthritis or JIA causes joint pain, stiffness and swelling. It
-                    limits young people from doing what they want and need to do like playing sports, hanging out with
-                    friends, going to school and having a job.</p>
+                    <p class="card-text">This is a place Holder, a placeholder.This is a place Holder, a placeholder.This is a place Holder, a placeholder.This is a place Holder, a placeholder.This is a place Holder, a placeholder.</p>
                       </div>
                     </div>
                  </div>
@@ -37,10 +35,9 @@ const Home = () => {
                         <img width="100%" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="main image two" class="cardImg card-img-top" />
                       </div>
                       <div class="card-body">
-                        <h5 class="card-title-intro card-title">You still have pain even if you take arthritis medications</h5>
+                        <h5 class="card-title-intro card-title">What is depression</h5>
                         <div class="underline"></div>
-                        <p class="card-text">You may take medication that can control arthritis, such as biologic agents, but you
-                         may still have pain.</p>
+                    <p class="card-text">This is a place Holder, a placeholder.This is a place Holder, a placeholder.This is a place Holder, a placeholder.This is a place Holder, a placeholder.</p>
                       </div>
                    </div>
                  </div>
@@ -50,10 +47,9 @@ const Home = () => {
                         <img width="100%" src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712__340.jpg" alt="main image three" class="cardImg card-img-top"/>
                       </div>
                       <div class="card-body">
-                        <h5 class="card-title-intro card-title">You want to find ways to manage your pain</h5>
+                        <h5 class="card-title-intro card-title">How to overcome depression</h5>
                         <div class="underline"></div>
-                        <p class="card-text">This decision aid will help you find other treatments that you can use when you have
-                          pain and talk about it with your health care team.</p>
+                    <p class="card-text">This is a place Holder, a placeholder.This is a place Holder, a placeholder.This is a place Holder, a placeholder.This is a place Holder, a placeholder.This is a place Holder, a placeholder.</p>
                       </div>
                     </div>
                  </div>
