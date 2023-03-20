@@ -11,7 +11,7 @@ const Header = () => {
             <div className='home-header'>
                 <div className="home-logo-header">
                     <Link style={{ display: 'flex', justifyContent: 'center', flexGrow: '1' }} to="/">
-                        <img className="logo-home" alt="logo" src="https://images.barrons.com/im-424346?width=639&height=426"/>
+                            <img className="logo-home" alt="logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Happylogo.png?20190713123048"/>
                     </Link>
                     <div>
                         <div className="home-logo-header-translation"> 
@@ -34,7 +34,7 @@ const Header = () => {
                                 <div className="tab-nav-header-translation"> <button class="Button">English</button> </div>
                             </div>
                             <NavLink to="/">
-                                <img className="logo-link" alt="logo" src="https://images.barrons.com/im-424346?width=639&height=426" />
+                                <img className="logo-link" alt="logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Happylogo.png?20190713123048" />
                             </NavLink>
                         </div>
                         <ul className="tab-nav-header">
