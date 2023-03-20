@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import StepTwo from "./StepTwo";
 import Header from './Header';
 import './App.css';
+import { useHistory } from 'react-router-dom';
+
 const StepOne = (props) => {
     const [values, setValues] = useState({
         q1: 0,
@@ -25,7 +27,11 @@ const StepOne = (props) => {
         const sum = values.q1 + values.q2 + values.q3 + values.q4 + values.q5;
         setTotal(sum);
         localStorage.setItem('myScore',sum);
+        history.push('/StepTwo');
+
     };
+    const history = useHistory();
+
 
     let lang = localStorage.getItem("language");
     for (const fieldset of document.querySelectorAll("fieldset[data-require-one]")) {
