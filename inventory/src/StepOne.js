@@ -99,7 +99,7 @@ const StepOne = (props) => {
                         <input type="radio" id="contactChoice8" name="q2" value="3" onChange={handleChange}/>
                         <label htmlFor="contactChoice8">Sometimes</label>
 
-                        <input type="radio" id="contactChoice9" name="field2" value="4" onChange={handleChange}/>
+                        <input type="radio" id="contactChoice9" name="q2" value="4" onChange={handleChange}/>
                         <label htmlFor="contactChoice9">More than half of the days</label>
 
                         <input type="radio" id="contactChoice10" name="q2" value="5" onChange={handleChange}/>
