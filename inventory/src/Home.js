@@ -7,7 +7,6 @@ import './Home.css';
 
 const Home = () => {
     
-    localStorage.setItem('language',"English");
     let lang = localStorage.getItem("language");
 
     return (
