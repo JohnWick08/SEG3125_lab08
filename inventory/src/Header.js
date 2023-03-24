@@ -6,6 +6,17 @@ import './Header.css';
 const Header = () => {
     let lang = localStorage.getItem("language");
     const location = useLocation();
+
+    const changeLang = () => {
+        if(lang === "English"){
+            localStorage.setItem('language',"Français");
+        }
+        else{
+            localStorage.setItem('language',"English");
+        }
+        lang = localStorage.getItem("language");
+    }
+
     return (
         <div>
             {(location.pathname === "/")&&
@@ -16,7 +27,7 @@ const Header = () => {
                     </Link>
                     <div>
                         <div className="home-logo-header-translation"> 
-                            <button class = "Button">{lang === "English" ? "Français" : "English"}</button>
+                            <button className = "Button" onClick={changeLang}>{lang === "English" ? "Français" : "English"}</button>
                         </div>
                     </div>
                 </div>
@@ -35,7 +46,7 @@ const Header = () => {
                     <div className={"header-container"}>
                         <div className='main-container'>
                             <div>
-                                <div className="tab-nav-header-translation"> <button class="Button">{lang === "English" ? "Français":"English"}</button> </div>
+                                <div className="tab-nav-header-translation"> <button className="Button" onClick={changeLang}>{lang === "English" ? "Français":"English"}</button> </div>
                             </div>
                             <NavLink to="/">
                                 <img className="logo-link" alt="logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Happylogo.png?20190713123048" />
