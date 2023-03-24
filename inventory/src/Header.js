@@ -1,22 +1,13 @@
 import {Link} from 'react-router-dom';
 import React from 'react';
 import { useLocation, NavLink } from "react-router-dom";
+import TranslateButton from "./translateButton";
 import './Header.css';
 
 const Header = () => {
+
     let lang = localStorage.getItem("language");
     const location = useLocation();
-
-    const changeLang = () => {
-        if(lang === "English"){
-            localStorage.setItem('language',"Français");
-        }
-        else{
-            localStorage.setItem('language',"English");
-        }
-        lang = localStorage.getItem("language");
-    }
-
     return (
         <div>
             {(location.pathname === "/")&&
@@ -25,13 +16,13 @@ const Header = () => {
                     <Link style={{ display: 'flex', justifyContent: 'center', flexGrow: '1' }} to="/">
                             <img className="logo-home" alt="logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Happylogo.png?20190713123048"/>
                     </Link>
-                    <div>
-                        <div className="home-logo-header-translation"> 
-                            <button className = "Button" onClick={changeLang}>{lang === "English" ? "Français" : "English"}</button>
-                        </div>
+
+                </div>
+                <div className='sub-header'><div>
+                    <div className="home-logo-header-translation">
+                        <div className="tab-nav-header-translation"> <TranslateButton/> </div>
                     </div>
                 </div>
-                <div className='sub-header'>
                     <div className="home-subheader-content">
                         <h1>{lang === "English" ?
                             "Managing Mental Health in Happiness Checker" :
@@ -46,7 +37,9 @@ const Header = () => {
                     <div className={"header-container"}>
                         <div className='main-container'>
                             <div>
-                                <div className="tab-nav-header-translation"> <button className="Button" onClick={changeLang}>{lang === "English" ? "Français":"English"}</button> </div>
+                                <div className="home-logo-header-translation">
+                                    <div className="tab-nav-header-translation"> <TranslateButton/> </div>
+                                </div>
                             </div>
                             <NavLink to="/">
                                 <img className="logo-link" alt="logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Happylogo.png?20190713123048" />
