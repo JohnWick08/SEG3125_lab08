@@ -19,7 +19,7 @@ ChartJS.register(
 
 
 const StepOne = (props) => {
-
+    let lang = localStorage.getItem("language");
     const [myList, setMyList] = useState([]);
     const [myLabels, setMyLabels] = useState([]);
     useEffect(() => {
@@ -66,12 +66,12 @@ const StepOne = (props) => {
                     </div>
                 </div>
                 <div className="body-container">
-                    <h1>Depression Level over time</h1>
-                    <p>Here you can review how mich depression level you have had over time</p>
+                    <h1>{lang === "English" ? "Depression Level over time" : "Niveau de dépression au fil du temps"}</h1>
+                    <p>{lang === "English" ? "Here you can review how mich depression level you have had over time" : "Ici, vous pouvez revoir votre niveau de dépression au fil du temps"}</p>
                     <div style={
                         {
-                            width: '600px',
-                            height: '300px'
+                            width: '1200px',
+                            height: '550px'
                         }
                     }>
                         

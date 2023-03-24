@@ -84,25 +84,25 @@ const StepOne = (props) => {
                             <div>
                                 <p className="numbered-subheading"> {lang === "English" ?
                                     "1. In the pass 7 days, how much depression on average did you have?" :
-                                    "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}
+                                    "1. Au cours des 7 derniers jours, combien de dépression avez-vous eu en moyenne ?"}
                                 </p>
                             </div>
                             <div class="circle-radio-button-container">
                                 <br></br>
                                 <input type="radio" id="contactChoice1" name="q1" value="1" onChange={handleChange}/>
-                                <label htmlFor="contactChoice1">No depressed</label>
+                                <label htmlFor="contactChoice1">{lang === "English" ? "No depressed":"Pas de dépression"}</label>
 
                                 <input type="radio" id="contactChoice2" name="q1" value="2" onChange={handleChange}/>
-                                <label htmlFor="contactChoice2">Little depressed</label>
+                                <label htmlFor="contactChoice2">{lang === "English" ? "Little depressed" : "Un peu déprimé"}</label>
 
                                 <input type="radio" id="contactChoice3" name="q1" value="3" onChange={handleChange}/>
-                                <label htmlFor="contactChoice3">Moderate depressed</label>
+                                <label htmlFor="contactChoice3">{lang === "English" ? "Moderate depressed" : "Modérément déprimé"}</label>
 
                                 <input type="radio" id="contactChoice4" name="q1" value="4" onChange={handleChange}/>
-                                <label htmlFor="contactChoice4">Very depressed</label>
+                                <label htmlFor="contactChoice4">{lang === "English" ? "Very depressed": "Très déprimé"}</label>
 
                                 <input type="radio" id="contactChoice5" name="q1" value="5" onChange={handleChange}/>
-                                <label htmlFor="contactChoice5">Extremely depressed</label>
+                                <label htmlFor="contactChoice5">{lang === "English" ? "Extremely depressed" : "Extrêmement déprimé"}</label>
                             </div>
                             <br></br>
                         </div>
@@ -112,23 +112,23 @@ const StepOne = (props) => {
                         <div className="box-container-numbered">
                             <p className="numbered-subheading">{lang === "English" ?
                                 "2. How often do you feel depressed in pass 7 days?" :
-                                "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}
+                                "2. À quelle fréquence vous sentez-vous déprimé au cours des 7 jours ?"}
                             </p>
                             <question>
                                 <input type="radio" id="contactChoice6" name="q2" value="1" onChange={handleChange}/>
-                                <label htmlFor="contactChoice6">Never</label>
+                                <label htmlFor="contactChoice6">{lang === "English" ? "Never" :"Jamais"}</label>
 
                                 <input type="radio" id="contactChoice7" name="q2" value="2" onChange={handleChange}/>
-                                <label htmlFor="contactChoice7">Rarely</label>
+                                <label htmlFor="contactChoice7">{lang === "English" ? "Rarely" : "Rarement"}</label>
 
                                 <input type="radio" id="contactChoice8" name="q2" value="3" onChange={handleChange}/>
-                                <label htmlFor="contactChoice8">Sometimes</label>
+                                <label htmlFor="contactChoice8">{lang === "English" ? "Sometimes" : "Parfois"}</label>
 
                                 <input type="radio" id="contactChoice9" name="q2" value="4" onChange={handleChange}/>
-                                <label htmlFor="contactChoice9">More than half of the days</label>
+                                <label htmlFor="contactChoice9">{lang === "English" ? "More than half of the days": "Plus de la moitié des jours"}</label>
 
                                 <input type="radio" id="contactChoice10" name="q2" value="5" onChange={handleChange}/>
-                                <label htmlFor="contactChoice10">Almost every day</label>
+                                <label htmlFor="contactChoice10">{lang === "English" ? "Almost every day": "Presque tous les jours"}</label>
                             </question>
                         </div>
                     </fieldset>
@@ -140,19 +140,19 @@ const StepOne = (props) => {
                                 "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}</p>
                             <question>
                                 <input type="radio" id="contactChoice11" name="q3" value="1" onChange={handleChange}/>
-                                <label htmlFor="contactChoice11">Never</label>
+                                <label htmlFor="contactChoice11">{lang === "English" ? "Never" :"Jamais"}</label>
 
                                 <input type="radio" id="contactChoice12" name="q3" value="2" onChange={handleChange}/>
-                                <label htmlFor="contactChoice12">Rarely</label>
+                                <label htmlFor="contactChoice12">{lang === "English" ? "Rarely" : "Rarement"}</label>
 
                                 <input type="radio" id="contactChoice13" name="q3" value="3" onChange={handleChange}/>
-                                <label htmlFor="contactChoice13">Sometimes</label>
+                                <label htmlFor="contactChoice13">{lang === "English" ? "Sometimes" : "Parfois"}</label>
 
                                 <input type="radio" id="contactChoice14" name="q3" value="4" onChange={handleChange}/>
-                                <label htmlFor="contactChoice14">More than half of the days</label>
+                                <label htmlFor="contactChoice14">{lang === "English" ? "More than half of the days": "Plus de la moitié des jours"}</label>
 
                                 <input type="radio" id="contactChoice15" name="q3" value="5" onChange={handleChange}/>
-                                <label htmlFor="contactChoice15">Almost every day</label>
+                                <label htmlFor="contactChoice15">{lang === "English" ? "Almost every day": "Presque tous les jours"}</label>
                             </question>
                         </fieldset>
                     </div>
@@ -165,19 +165,19 @@ const StepOne = (props) => {
                             </p>
                             <question>
                                 <input type="radio" id="contactChoice16" name="q4" value="1" onChange={handleChange}/>
-                                <label htmlFor="contactChoice16">Never</label>
+                                <label htmlFor="contactChoice16">{lang === "English" ? "Never" :"Jamais"}</label>
 
                                 <input type="radio" id="contactChoice17" name="q4" value="2" onChange={handleChange}/>
-                                <label htmlFor="contactChoice17">Rarely</label>
+                                <label htmlFor="contactChoice17">{lang === "English" ? "Rarely" : "Rarement"}</label>
 
                                 <input type="radio" id="contactChoice18" name="q4" value="3" onChange={handleChange}/>
-                                <label htmlFor="contactChoice18">Sometimes</label>
+                                <label htmlFor="contactChoice18">{lang === "English" ? "Sometimes" : "Parfois"}</label>
 
                                 <input type="radio" id="contactChoice19" name="q4" value="4" onChange={handleChange}/>
-                                <label htmlFor="contactChoice19">More than half of the days</label>
+                                <label htmlFor="contactChoice19">{lang === "English" ? "More than half of the days": "Plus de la moitié des jours"}</label>
 
                                 <input type="radio" id="contactChoice20" name="q4" value="5" onChange={handleChange}/>
-                                <label htmlFor="contactChoice20">Almost every day</label>
+                                <label htmlFor="contactChoice20">{lang === "English" ? "Almost every day": "Presque tous les jours"}</label>
                             </question>
                         </fieldset>
                     </div>
@@ -191,19 +191,19 @@ const StepOne = (props) => {
                                 "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}</p>
                             <question>
                                 <input type="radio" id="contactChoice21" name="q5" value="1" onChange={handleChange}/>
-                                <label htmlFor="contactChoice21">Never</label>
+                                <label htmlFor="contactChoice21">{lang === "English" ? "Never" :"Jamais"}</label>
 
                                 <input type="radio" id="contactChoice22" name="q5" value="2" onChange={handleChange}/>
-                                <label htmlFor="contactChoice22">Rarely</label>
+                                <label htmlFor="contactChoice22">{lang === "English" ? "Rarely" : "Rarement"}</label>
 
                                 <input type="radio" id="contactChoice23" name="q5" value="3" onChange={handleChange}/>
-                                <label htmlFor="contactChoice23">Sometimes</label>
+                                <label htmlFor="contactChoice23">{lang === "English" ? "Sometimes" : "Parfois"}</label>
 
                                 <input type="radio" id="contactChoice24" name="q5" value="4" onChange={handleChange}/>
-                                <label htmlFor="contactChoice24">More than half of the days</label>
+                                <label htmlFor="contactChoice24">{lang === "English" ? "More than half of the days": "Plus de la moitié des jours"}</label>
 
                                 <input type="radio" id="contactChoice25" name="q5" value="5" onChange={handleChange}/>
-                                <label htmlFor="contactChoice25">Almost every day</label>
+                                <label htmlFor="contactChoice25">{lang === "English" ? "Almost every day": "Presque tous les jours"}</label>
                             </question>
                         </fieldset>
                     </div>

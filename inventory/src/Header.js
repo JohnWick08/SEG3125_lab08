@@ -4,6 +4,7 @@ import { useLocation, NavLink } from "react-router-dom";
 import './Header.css';
 
 const Header = () => {
+    let lang = localStorage.getItem("language");
     const location = useLocation();
     return (
         <div>
@@ -15,13 +16,16 @@ const Header = () => {
                     </Link>
                     <div>
                         <div className="home-logo-header-translation"> 
-                            <button class = "Button">English</button> 
+                            <button class = "Button">{lang === "English" ? "Français" : "English"}</button>
                         </div>
                     </div>
                 </div>
                 <div className='sub-header'>
                     <div className="home-subheader-content">
-                        <h1>Managing Mental Health in Happiness Checker</h1>
+                        <h1>{lang === "English" ?
+                            "Managing Mental Health in Happiness Checker" :
+                            "Gérer la santé mentale dans le vérificateur de bonheur"
+                        }</h1>
                     </div>
                 </div>
             </div>
@@ -42,7 +46,7 @@ const Header = () => {
 
 
                                 <NavLink className="tab-nav-header-item tab-nav-header-navlink" to='/StepOne'>
-                                    <p>Questionnaire</p>
+                                    <p>{lang === "English" ? "Questionnaire" : "Questionnaire"}</p>
                                     <div className="tab-navlink-div">
                                         <h2>1</h2>
                                     </div>
@@ -51,14 +55,14 @@ const Header = () => {
 
 
                                 <NavLink className="tab-nav-header-item tab-nav-header-navlink" to='/StepTwo'>
-                                    <p>Result Analysis</p>
+                                    <p>{lang === "English" ? "Result Analysis" : "Analyse des résultats"}</p>
                                     <div className="tab-navlink-div">
                                         <h2>2</h2>
                                     </div>
                                 </NavLink>
 
                                 <NavLink className="tab-nav-header-item tab-nav-header-navlink" to='/StepThree'>
-                                    <p>Tracking Board</p>
+                                    <p>{lang === "English" ? "Tracking Board" : "Tableau de suivi"}</p>
                                     <div className="tab-navlink-div">
                                         <h2>3</h2>
                                     </div>
