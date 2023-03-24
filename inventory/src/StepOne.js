@@ -24,13 +24,29 @@ const StepOne = (props) => {
     };
 
     const handleSubmit = (event) => {
+        
         event.preventDefault();
         const sum = values.q1 + values.q2 + values.q3 + values.q4 + values.q5;
         setTotal(sum);
-        localStorage.setItem('myScore',sum);
+        console.log(sum)
+        localStorage.setItem('myScore', sum);
+        //record how many entriws are there
+        var num = localStorage.getItem('numOfEntries');
+        if(num===null){
+            localStorage.setItem('numOfEntries', 0);
+            localStorage.setItem('myScore0', sum);
+            //alert(localStorage.getItem('numOfEntries'));
+
+        }
+        else{
+            localStorage.setItem('numOfEntries', (Number(num)+1));
+            localStorage.setItem('myScore'+(Number(num)+1),sum);
+            //alert(localStorage.getItem('numOfEntries'));
+        }
+        //localStorage.clear();
         history.push('/StepTwo');
     };
-    console.log(total)
+    
     const history = useHistory();
 
     let lang = localStorage.getItem("language");

@@ -17,12 +17,25 @@ ChartJS.register(
     PointElement
 )
 
+
 const StepOne = (props) => {
+
+    const [myList, setMyList] = useState([]);
+    const [myLabels, setMyLabels] = useState([]);
+    useEffect(() => {
+        //console.log(localStorage.getItem('numOfEntries'));
+        for (var a = 0; a <= Number(localStorage.getItem('numOfEntries')); a++) {
+            console.log(a+": "+localStorage.getItem('myScore' + a));
+            myLabels.push('Day'+a)
+            myList.push( Number(localStorage.getItem('myScore' + a)));
+        }
+        console.log(myList)
+    }, []);
     const data={
-        labels:['Day1','Day2','Day3'],
+        labels: myLabels,
         datasets:[{
             labels:'hahah',
-            data:[12,6,9],
+            data:myList,
             backgroundColor:'aqua',
             borderColor: 'black',
             pointBorderColor: 'aqua',
@@ -36,8 +49,8 @@ const StepOne = (props) => {
         },
         scales:{
             y:{
-                //min:3,
-                //max:6
+                min:0,
+                max:30
             }
         }
     }
@@ -69,7 +82,8 @@ const StepOne = (props) => {
 
                     </div>
                 </div>
-            </div>    
+            </div>   
+            <p>{(localStorage.getItem('myScor')===null)}</p> 
         </div>
     );
 }
