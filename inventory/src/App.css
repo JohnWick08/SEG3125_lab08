@@ -1469,3 +1469,24 @@ form
 }
 
 
+img.result {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;}
+
+.center{
+  display: grid;
+  position: relative;
+  text-align: center;
+  bottom: 50px;
+  margin-bottom: 1rem;
+  padding: 0rem 1rem;
+}
+.centerp{
+  font-weight: bold;
+  font-size: 25px;
+}
+.recommandation{
+  font-size: 25px;
+}
