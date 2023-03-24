@@ -35,7 +35,7 @@ const Header = () => {
                     <div className={"header-container"}>
                         <div className='main-container'>
                             <div>
-                                <div className="tab-nav-header-translation"> <button class="Button">English</button> </div>
+                                <div className="tab-nav-header-translation"> <button class="Button">{lang === "English" ? "Français":"English"}</button> </div>
                             </div>
                             <NavLink to="/">
                                 <img className="logo-link" alt="logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Happylogo.png?20190713123048" />
