@@ -6,6 +6,7 @@ import {NavLink} from "react-router-dom";
 import { useHistory } from 'react-router-dom';
 
 const StepOne = (props) => {
+    const [started, setStarted] = useState(false);
     const [values, setValues] = useState({
         q1: 0,
         q2: 0,
@@ -16,6 +17,7 @@ const StepOne = (props) => {
     const [total, setTotal] = useState(0);
 
     const handleChange = (event) => {
+        setStarted(true)
         const { name, value } = event.target;
         setValues({
             ...values,
@@ -24,27 +26,31 @@ const StepOne = (props) => {
     };
 
     const handleSubmit = (event) => {
-        
-        event.preventDefault();
-        const sum = values.q1 + values.q2 + values.q3 + values.q4 + values.q5;
-        setTotal(sum);
-        console.log(sum)
-        localStorage.setItem('myScore', sum);
-        //record how many entriws are there
-        var num = localStorage.getItem('numOfEntries');
-        if(num===null){
-            localStorage.setItem('numOfEntries', 0);
-            localStorage.setItem('myScore0', sum);
-            //alert(localStorage.getItem('numOfEntries'));
+        if(started===true){
+            event.preventDefault();
+            const sum = values.q1 + values.q2 + values.q3 + values.q4 + values.q5;
+            setTotal(sum);
+            console.log(sum)
+            localStorage.setItem('myScore', sum);
+            //record how many entriws are there
+            var num = localStorage.getItem('numOfEntries');
+            if(num===null){
+                localStorage.setItem('numOfEntries', 0);
+                localStorage.setItem('myScore0', sum);
+                //alert(localStorage.getItem('numOfEntries'));
 
+            }
+            else{
+                localStorage.setItem('numOfEntries', (Number(num)+1));
+                localStorage.setItem('myScore'+(Number(num)+1),sum);
+                //alert(localStorage.getItem('numOfEntries'));
+            }
+            //localStorage.clear();
+            history.push('/StepTwo');
         }
         else{
-            localStorage.setItem('numOfEntries', (Number(num)+1));
-            localStorage.setItem('myScore'+(Number(num)+1),sum);
-            //alert(localStorage.getItem('numOfEntries'));
+            alert("Please fill in all the answers.")
         }
-        //localStorage.clear();
-        history.push('/StepTwo');
     };
     
     const history = useHistory();
