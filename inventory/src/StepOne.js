@@ -137,7 +137,7 @@ const StepOne = (props) => {
                         <fieldset data-require-one>
                             <p className="numbered-subheading">  {lang === "English" ?
                                 "3. Do you have trouble falling or staying asleep in pass 7 day?" :
-                                "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}</p>
+                                "3. Avez-vous du mal à vous endormir ou à rester endormi au cours de la journée 7 ?"}</p>
                             <question>
                                 <input type="radio" id="contactChoice11" name="q3" value="1" onChange={handleChange}/>
                                 <label htmlFor="contactChoice11">{lang === "English" ? "Never" :"Jamais"}</label>
@@ -160,8 +160,8 @@ const StepOne = (props) => {
                     <div className="box-container-numbered">
                         <fieldset data-require-one>
                             <p className="numbered-subheading">{lang === "English" ?
-                                "4. How much interest or pleasure in doing things" :
-                                "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}
+                                "4. How much interest or pleasure in doing things?" :
+                                "4. Quel intérêt ou plaisir à faire les choses?"}
                             </p>
                             <question>
                                 <input type="radio" id="contactChoice16" name="q4" value="1" onChange={handleChange}/>
@@ -188,7 +188,7 @@ const StepOne = (props) => {
                         <fieldset data-require-one>
                             <p className="numbered-subheading">{lang === "English" ?
                                 "5. Do you feeling bad about your self?" :
-                                "1. Au cours des sept derniers jours, quel niveau de douleur avez-vous ressenti en moyenne à cause de votre arthrite?"}</p>
+                                "5. Vous sentez-vous mal dans votre peau?"}</p>
                             <question>
                                 <input type="radio" id="contactChoice21" name="q5" value="1" onChange={handleChange}/>
                                 <label htmlFor="contactChoice21">{lang === "English" ? "Never" :"Jamais"}</label>
