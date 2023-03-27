@@ -23,13 +23,19 @@ const StepOne = (props) => {
     const [myList, setMyList] = useState([]);
     const [myLabels, setMyLabels] = useState([]);
     useEffect(() => {
-        //console.log(localStorage.getItem('numOfEntries'));
         for (var a = 0; a <= Number(localStorage.getItem('numOfEntries')); a++) {
+            if (myLabels.includes('Day' + a) || myLabels.includes('jour' + a)){}
+            else{
             console.log(a+": "+localStorage.getItem('myScore' + a));
-            myLabels.push('Day'+a)
+            if(lang==="English")
+                myLabels.push('Day'+a)
+            else
+                myLabels.push('jour' + a)
             myList.push( Number(localStorage.getItem('myScore' + a)));
+            }
         }
         console.log(myList)
+        
     }, []);
     const data={
         labels: myLabels,
